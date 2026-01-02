@@ -452,10 +452,10 @@ header,
   gap: 15px;
 }
 
-.brand-logo {
-  width: 820px;   /* CHANGE SIZE HERE */
+.brand-logo img {
+  width: 220px;
   height: auto;
-  display: block;
+}
 }
 
 .brand-text h1 {
@@ -478,4 +478,10 @@ header,
   .brand-logo {
     width: 420px;
   }
+      .brand-logo {
+  display: flex;
+  align-items: center;
+  max-width: none;
+  flex: 1;
+      }
     }
