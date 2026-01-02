@@ -404,3 +404,67 @@ header,
   display: block;
   margin: 0 auto;
   }
+/* ===== HEADER LAYOUT FIX ===== */
+.top-header {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Brand section */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Logo */
+.main-logo {
+  width: 180px;
+  height: auto;
+}
+
+/* Brand text */
+.brand-text h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #4da6ff;
+}
+
+.brand-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #003366;
+}
+
+/* Button */
+.btn {
+  background: #f1c40f;
+  color: #000;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: column;
+  }
+    }
