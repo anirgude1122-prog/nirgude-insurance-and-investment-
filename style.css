@@ -467,4 +467,14 @@ header,
   .brand {
     flex-direction: column;
   }
+  .brand img {
+  width: 220px;     /* 👈 change this number */
+  height: auto;
+  max-width: 100%;
+  }
+@media (max-width: 600px) {
+  .brand img {
+    width: 120px;
+  }
+}
     }
