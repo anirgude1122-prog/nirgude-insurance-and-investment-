@@ -323,13 +323,20 @@ footer {
   color: #003366;
 }
 
+.testimonial-carousel {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
 .testimonial-box {
-  max-width: 800px;
-  margin: 20px auto;
+  min-width: 100%;
+  flex-shrink: 0;
   padding: 25px;
   background: #ffffff;
   border-left: 5px solid #4da6ff;
   border-radius: 8px;
+  margin-right: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
@@ -343,4 +350,4 @@ footer {
   margin-top: 15px;
   font-weight: bold;
   color: #003366;
-  }
+    }
