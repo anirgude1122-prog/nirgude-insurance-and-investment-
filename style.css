@@ -396,3 +396,11 @@ header,
 .top-header {
   min-height: 120px !important;
 }
+/* === FINAL LOGO FIX (NEW CLASS) === */
+.main-logo {
+  width: 220px;
+  height: auto;
+  max-width: none;
+  display: block;
+  margin: 0 auto;
+  }
