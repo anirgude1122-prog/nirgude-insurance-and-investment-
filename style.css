@@ -370,11 +370,7 @@ footer {
   justify-content: center;
 }
 
-.brand-logo img {
-  width: 180px !important;  /* desired logo width */
-  height: auto !important;
-  display: block;            /* ensures no inline spacing issues */
-}
+
 
 /* Optional: override header flex issues */
 .top-header, .brand {
@@ -382,28 +378,14 @@ footer {
   justify-content: center !important;
   }
 /* === FORCE LOGO SIZE - FINAL OVERRIDE === */
-.brand-logo {
-  width: auto !important;
-  max-width: none !important;
-}
 
-.brand-logo img {
-  width: 220px !important;   /* increase to 250px if you want */
-  max-width: none !important;
-  height: auto !important;
 }
 header,
 .top-header {
   min-height: 120px !important;
 }
 /* === FINAL LOGO FIX (NEW CLASS) === */
-.main-logo {
-  width: 220px;
-  height: auto;
-  max-width: none;
-  display: block;
-  margin: 0 auto;
-  }
+
 /* ===== HEADER LAYOUT FIX ===== */
 .top-header {
   background: #ffffff;
@@ -427,10 +409,6 @@ header,
   gap: 15px;
 }
 
-/* Logo */
-.main-logo {
-  width: 220px;
-  height: auto;
 }
 
 /* Brand text */
@@ -466,15 +444,38 @@ header,
 
   .brand {
     flex-direction: column;
-  }
-  .brand img {
-  width: 220px;     /* 👈 change this number */
-  height: auto;
-  max-width: 100%;
-  }
-@media (max-width: 600px) {
-  .brand img {
-    width: 120px;
-  }
+  /* ===== BRAND HEADER FIX ===== */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
+.brand-logo {
+  width: 220px;   /* CHANGE SIZE HERE */
+  height: auto;
+  display: block;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #4da6ff;
+}
+
+.brand-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #003366;
+  }
+    @media (max-width: 768px) {
+  .brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand-logo {
+    width: 140px;
+  }
     }
