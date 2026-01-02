@@ -7,14 +7,20 @@ body {
 }
 
 /* ================= HEADER ================= */
-.top-header {
+..top-header {
+  display: flex;
+  justify-content: center;  /* centers entire header */
+  align-items: center;      /* vertical align logo, text, button */
+  gap: 40px;                /* space between brand & button */
+  flex-wrap: wrap;          /* keeps layout clean on mobile */
   background: #ffffff;
   padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid #ddd;
   min-height: 120px;
+}
+
+.top-header .btn {
+  align-self: center;       /* ensures vertical center with brand */
 }
 
 .header-container {
@@ -34,7 +40,7 @@ body {
 
 /* ===== LOGO ===== */
 .brand-logo img {
-  height: 90px;       /* desktop logo height */
+  height: 220px;       /* desktop logo height */
   width: auto;
   display: block;
   margin: 0 auto;
@@ -151,7 +157,7 @@ body {
 }
 
 .service-box img {
-  width: 60px;   /* icon size */
+  width: 120px;   /* icon size */
   height: auto;
   display: block;
   margin: 0 auto 15px auto;
@@ -376,3 +382,19 @@ footer {
     width: 50px;    /* smaller icons on mobile */
   }
   }
+@media (max-width: 768px) {
+  .brand-logo img {
+    height: 120px;   /* slightly smaller logo on mobile */
+  }
+
+  .service-box img,
+  .registration-box img,
+  .trust-box img {
+    width: 60px;     /* slightly smaller icons on mobile */
+  }
+
+  .top-header {
+    flex-direction: column; /* stack logo + brand + button vertically */
+    gap: 15px;
+  }
+}
