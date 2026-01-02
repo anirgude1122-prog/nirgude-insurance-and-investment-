@@ -453,7 +453,7 @@ header,
 }
 
 .brand-logo img {
-  width: 220px;
+  width: 420px;
   height: auto;
 }
 }
@@ -475,9 +475,6 @@ header,
     text-align: center;
   }
 
-  .brand-logo {
-    width: 420px;
-  }
       .brand-logo {
   display: flex;
   align-items: center;
