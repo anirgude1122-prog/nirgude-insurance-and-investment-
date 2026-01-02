@@ -345,7 +345,7 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .testimonial-box {
     flex: 0 0 95%; /* almost full width on mobile */
   }
