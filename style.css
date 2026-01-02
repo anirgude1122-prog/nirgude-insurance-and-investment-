@@ -34,14 +34,14 @@ body {
 .brand-text h1 {
   margin: 0;
   font-size: 22px;
-  color: #4da6ff;  /* Light blue */
+  color: #003366;  /* Light blue */
   line-height: 1.2;
 }
 
 .brand-text p {
   margin: 4px 0 0;
   font-size: 14px;
-  color: #003366;
+  color: #4da6ff;
 }
 /* Navigation */
 nav a {
