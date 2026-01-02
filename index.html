@@ -207,7 +207,22 @@
    aria-label="Chat on WhatsApp">
   <img src="whatsapp-icon.png" alt="WhatsApp Chat">
 </a>
+<script>
+const carousel = document.querySelector('.testimonial-carousel');
+let index = 0;
 
+function showNextTestimonial() {
+  index++;
+  if(index >= carousel.children.length) index = 0;
+  carousel.scrollTo({
+    left: carousel.children[index].offsetLeft,
+    behavior: 'smooth'
+  });
+}
+
+// Change testimonial every 5 seconds
+setInterval(showNextTestimonial, 5000);
+</script>
 </body>
         </html>
             
