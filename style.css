@@ -28,6 +28,7 @@ body {
 
 .brand-text h1 {
   margin: 0;
+  
   font-size: 28px;
   color: #4da6ff;
   line-height: 1.2;
@@ -221,3 +222,17 @@ footer {
     height: 80px;
   }
 }
+/* FIX: Service box list styling */
+.service-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 10px 0 0;
+  text-align: left;
+  max-width: none;
+}
+
+.service-box ul li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  }
