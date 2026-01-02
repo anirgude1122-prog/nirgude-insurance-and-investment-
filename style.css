@@ -1,0 +1,77 @@
+/* Professional finance website base style */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header img {
+  height: 55px;
+}
+
+/* Navigation */
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+/* Sections */
+section {
+  padding: 60px 40px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #003366, #005fa3);
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Services */
+.services {
+  background: white;
+}
+
+.service-box {
+  background: #f1f4f8;
+  padding: 25px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  }
