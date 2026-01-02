@@ -280,3 +280,11 @@ footer {
   margin-bottom: 8px;
   color: #333;
 }
+/* Global icon size control */
+.service-box img,
+.registration-box img,
+.trust-box img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
