@@ -1197,6 +1197,115 @@ button,
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
+  /* Accordion Section - Professional Style */
+.accordion {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.accordion-item {
+  border-radius: 12px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 18px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background: #f7f8fa;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #003366;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: #e6f0ff;
+}
+
+.accordion-header img {
+  width: 28px;
+  margin-right: 12px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+  line-height: 1.7;
+  font-size: 15px;
+  color: #333333;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Highlight SIP */
+.highlight-sip {
+  border: 2px solid #f4c430;
+  background: linear-gradient(135deg, #fffbe6, #ffffff);
+}
+
+/* Types of Funds heading */
+.funds-subheading {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: #003366;
+  margin: 25px 0 10px;
+  border-left: 5px solid #f4c430;
+  padding-left: 12px;
+}
+
+/* Lists */
+.accordion-content ul {
+  margin: 10px 0 0 20px;
+  list-style-type: disc;
+}
+
+/* Quote */
+.funds-quote {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .accordion-header {
+    font-size: 16px;
+  }
+
+  .accordion-content {
+    font-size: 14px;
+    padding: 16px;
+  }
+  }
 
     
   
