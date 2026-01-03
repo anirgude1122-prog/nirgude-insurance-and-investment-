@@ -1307,6 +1307,17 @@ button,
     font-size: 14px;
     padding: 16px;
   }
+  .funds-subheading {
+  font-size: 22px;                  /* Big enough to stand out */
+  font-weight: 700;                  /* Bold */
+  color: #003366;                    /* Dark blue for professionalism */
+  margin: 40px 0 20px;               /* Space above and below */
+  padding: 12px 18px;                /* Some padding around */
+  background: #f4f9ff;               /* Subtle light blue background */
+  border-left: 6px solid #f4c430;   /* Golden accent bar */
+  border-radius: 6px;                /* Rounded corners */
+  line-height: 1.3;
+  }
   }
 
     
