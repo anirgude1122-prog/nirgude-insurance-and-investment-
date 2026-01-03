@@ -1453,8 +1453,15 @@ section#funds .funds-quote {
   text-align: center !important;
   color: #444 !important;
   }
-  }
-  }
+  /* Fix Types of Funds heading */
+.funds-subheading,
+h3.funds-subheading {
+  border-left: none !important;
+  padding-left: 0 !important;
+  text-align: center;
+  margin: 40px 0 24px 0;
+    }
+  
 
     
   
