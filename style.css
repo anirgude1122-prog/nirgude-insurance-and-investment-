@@ -566,5 +566,21 @@ footer {
 #services .service-box {
   width: 320px;
 }
+  /* ===== MOBILE SERVICES CENTER FIX ===== */
+@media (max-width: 768px) {
+
+  #services .service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* 🔑 centers cards horizontally */
+  }
+
+  #services .service-box {
+    width: 90%;
+    max-width: 360px;
+    margin: 0 auto;        /* 🔑 force center */
+  }
+
+    }
   
   
