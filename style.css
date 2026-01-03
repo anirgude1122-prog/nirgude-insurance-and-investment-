@@ -689,7 +689,112 @@ button,
     margin: 0 auto 30px auto;   /* center and add bottom spacing */
     font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;  /* modern clean font */
   }
+  /* Investment Options Section */
+.investment-options {
+    background: #f4f8ff;
+    padding: 60px 20px;
+    text-align: center;
+}
 
+.investment-options h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Accordion Styles */
+.accordion {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.accordion-item {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.accordion-item.active {
+    border-left: 5px solid #4da6ff; /* Highlight active */
+}
+
+/* Header */
+.accordion-header {
+    background: #4da6ff;
+    color: white;
+    cursor: pointer;
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 12px;
+}
+
+.accordion-header:hover {
+    background: #357ab8;
+}
+
+.accordion-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: #f9fbff;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 600px; /* Large enough to fit content */
+    padding: 20px 25px;
+}
+
+/* List Styling */
+.accordion-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.accordion-content li {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .accordion-header {
+        font-size: 16px;
     }
+
+    .accordion-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .accordion-content {
+        font-size: 15px;
+    }
+  
+
+    
   
   
