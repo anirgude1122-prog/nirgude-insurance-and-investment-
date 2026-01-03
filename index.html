@@ -392,6 +392,22 @@ document.querySelectorAll('.accordion-header').forEach(header => {
   });
 });
   </script>
+  <script>
+  document.querySelectorAll(".accordion-header").forEach(button => {
+    button.addEventListener("click", () => {
+      const item = button.parentElement;
+      const accordion = item.parentElement;
+
+      // close other open items
+      accordion.querySelectorAll(".accordion-item").forEach(i => {
+        if (i !== item) i.classList.remove("active");
+      });
+
+      // toggle current
+      item.classList.toggle("active");
+    });
+  });
+  </script>
 </body>
         </html>
             
