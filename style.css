@@ -1331,6 +1331,52 @@ button,
   padding-left: 16px;
   border-left: 5px solid #f4c430;
   }
+  /* ===== FUNDS SECTION VISUAL UPGRADE ===== */
+.funds-section {
+  background: linear-gradient(180deg, #ffffff, #f7faff);
+  padding: 70px 20px;
+}
+
+.funds-quote {
+  margin-top: 50px;
+  font-size: 18px;
+  font-style: italic;
+  color: #444;
+  text-align: center;
+}
+
+/* Accordion professional look */
+.accordion-item {
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 51, 102, 0.08);
+}
+
+.accordion-header {
+  background: #ffffff;
+  font-size: 17px;
+}
+
+.accordion-item.active .accordion-header {
+  background: #fffbe6;
+  border-left: 5px solid #f4c430;
+}
+
+.accordion-content {
+  background: #ffffff;
+  animation: fadeSlide 0.3s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  }
   }
 
     
