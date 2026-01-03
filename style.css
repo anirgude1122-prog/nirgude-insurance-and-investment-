@@ -543,5 +543,9 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   }
+  /* Center service panels */
+.service-container {
+  justify-content: center;
+  }
   
   
