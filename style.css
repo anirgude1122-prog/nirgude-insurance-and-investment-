@@ -547,5 +547,24 @@ footer {
 .service-container {
   justify-content: center;
   }
+  /* FORCE center services section */
+#services {
+  text-align: center;
+}
+
+/* Center the service container itself */
+#services .service-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;   /* 🔑 THIS centers the whole row */
+}
+
+/* Make all service panels equal size */
+#services .service-box {
+  width: 320px;
+}
   
   
